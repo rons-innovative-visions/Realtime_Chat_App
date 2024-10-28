@@ -1,4 +1,5 @@
-const Message = ({content, type, own, user}) => {
+
+export function Message({content, type, own, user}) {
     return (
         <p className={`message px-1 md:px-6 py-1 flex ${own && "justify-end"}`}>
             {
@@ -20,5 +21,3 @@ const Message = ({content, type, own, user}) => {
         </p>
     )
 }
-
-export default Message

@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { new_user } from "@/assets"
 
-const ServerMessage = ({content}) => {
+export function ServerMessage({content}){
     return (
         <p className="px-1 md:px-6 py-1 flex">
             <span className="text-xl md:text-3xl text-white flex bg-transparent">
@@ -11,5 +11,3 @@ const ServerMessage = ({content}) => {
         </p>
     )
 }
-
-export default ServerMessage

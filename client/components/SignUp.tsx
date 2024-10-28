@@ -1,4 +1,6 @@
-const SignUp = ({user, socket, input, setInput}) => {
+import React from "react";
+
+export function SignUp({user, socket, input, setInput}){
 
     const addUser = () => {
         user.current = {name: input, id: socket.id};
@@ -25,4 +27,3 @@ const SignUp = ({user, socket, input, setInput}) => {
     )
 }
 
-export default SignUp

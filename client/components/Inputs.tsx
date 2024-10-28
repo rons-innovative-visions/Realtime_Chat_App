@@ -2,7 +2,7 @@ import { useRef, useState } from "react"
 import Image from "next/image"
 import { send, upload } from "@/assets"
 
-const Inputs = ({user, socket, setChat}) => {
+export function Inputs({user, socket, setChat}) {
 
     const [input, setInput] = useState("")
 
@@ -54,5 +54,3 @@ const Inputs = ({user, socket, setChat}) => {
         </div>
     )
 }
-
-export default Inputs

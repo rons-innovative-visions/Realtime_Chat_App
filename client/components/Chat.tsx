@@ -1,7 +1,8 @@
+import React from "react";
 import { Message, ServerMessage, Typing } from "./Messages"
 import { useEffect, useRef } from "react"
 
-const Chat = ({chat, user, typing}) => {
+export function Chat({chat, user, typing}) {
 
     const scroller = useRef(null);
 
@@ -31,5 +32,3 @@ const Chat = ({chat, user, typing}) => {
         </div>
     )
 }
-
-export default Chat
