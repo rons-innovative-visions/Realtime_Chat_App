@@ -1,13 +1,14 @@
-const express = require("express");
-const http = require("http");
+import express from "express";
+import { createServer } from "http";
 
 const app = express();
-const server = http.createServer(app);
+const server = createServer(app);
 
-const { Server } = require("socket.io");
+import { Server } from "socket.io";
 const io = new Server(server, {
     cors: {
-        origin: "*",
+        origin: "https://1bddkdwp-3000.asse.devtunnels.ms",
+        methods: ["GET", "POST"]
     }
 })
 
